@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Sacred Heart Witch </title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+<body>
+<div class="wrapper">
+          <div class="nav1">
+              <div class="navlink"><a href=about.html>about</a></div>
+              <div class="navlink"><a href="https://archiveofourown.org/users/Zesty_Bill_Clinton/works">AO3</a></div>
+              <div class="navlink"><a href=commentbox.html>Contact</a></div>
+              <div class="navlink"><a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-33522-30">Guestbook</a></div>
+          </div>
+          <div class="header"><h1>Sacred Heart Witch</h1></div>
+          <div class="nav2">
+    <div class="navlink"><!-- LINK NOT DONE --><a href=destruction.html>tarot</a></div>
+    <div class="navlink"><!-- LINK NOT DONE --><a href=destruction.html>blog</a></div>
+    <div class="navlink"><!-- LINK NOT DONE --><a href=index.html>home</a></div>
+    <div class="navlink"><!-- LINK NOT DONE --><a href=destruction.html>reviews</a></div>
+              <div class="navlink"><a href=links.html>Links</a></div>
+              <div class="navlink"><a href=destruction.html>books</a></div>
+    </div>
+
+                   <div class="main">
+      <H1> F&aacute;lite </H1>
+<center>
+    <textarea rows="4" cols="50" id="question" placeholder="Type your comment here and click 'send', please include contact info if you have a question and would like a response!"></textarea>
+<button id="send">Send</button>
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="footer">thanks for coming!</div>
+    established may 2022
+</center>
+
+<script>
+document.getElementById('send').onclick = function() {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://discordapp.com/api/webhooks/987719538789449738/dK4eNfs2ezbaeCxwL5BCaKrh3dvrdwgPc82gD39iVT01kE7vVVEgBjVvYR5SM90GrbcT");
+        request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+        username: "Question"+new Date().getTime(),
+        content: document.getElementById("question").value
+    }
+    request.send(JSON.stringify(params));
+
+    // below gives your user some helpful feedback letting them know their message has been sent
+    alert('Thank you for your message!');
+    // below clears the form fields after submission
+    document.getElementById("question").value = '';
+}
+
+</script>
+    </div></div></body>
+</html>

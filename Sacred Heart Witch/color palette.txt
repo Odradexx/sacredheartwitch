@@ -1,0 +1,12 @@
+/* XML */
+<palette>
+  <color name="Smoky Black" hex="#1A0D03" r="26" g="13" b="3" />
+  <color name="Cafe Noir" hex="#4F412A" r="79" g="65" b="42" />
+  <color name="Redwood" hex="#94534A" r="148" g="83" b="74" />
+  <color name="Black Bean" hex="#4C0E03" r="76" g="14" b="3" />
+  <color name="Smoky Black" hex="#1F1003" r="31" g="16" b="3" />
+  <color name="Sepia" hex="#6A3D0E" r="106" g="61" b="14" />
+  <color name="Chocolate Traditional" hex="#834202" r="131" g="66" b="2" />
+  <color name="Khaki Web" hex="#CFC4A8" r="207" g="196" b="168" />
+  <color name="Bistre" hex="#241309" r="36" g="19" b="9" />
+</palette>
